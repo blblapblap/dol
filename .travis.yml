@@ -1,16 +1,11 @@
 language: python
-
 python:
-    - "3.7"
-
+- '3.7'
 sudo: required
-
-install:
-    pip install flask
-
-script:
-    python test.py
-
+install: pip install flask
+script: python test.py
 deploy:
-    provider: heroku
-    app: bldol
+  provider: heroku
+  app: bldol
+  apikey:
+    secure: QUiNpi0tIRe430pPgouBGLKLyzSU+tbU7Yx0FkQq+AR7dHAFFs15OWwUMG2ozR3jQnNpOIrTyD4bkq7eT/Uu72/7J0WaKsbLIPK5IIpa51tkEsSyF3isvTONsZ4OS0gNy/U/wfOx2UPLd4x7BfpU3DWQ6PQ+BZVHojofh9BV/rEWSG7os6nRTCEZidFHqqmpibjLsnbCa62+FxFTxlZYje7xvXC5u3IEpPPb0ovNb1zSaknB/2PFqSqXle1WUPAv0HWyif3yYRL2gkCkQqYgBLPAscYfTECmiCuN4T/pCyoSN9LIJh8ofx7XtrjVQm9EHQvkElsnVRSCuciD90hIzfMF9h7XzxDb2iCBq29T3NP6dE9q2Mrxh6YNbsDnAH0brRB2dEBZ2UEvgJpIWyITQ6FveC9gPj1DoVCoqSC/gTkUx3GG6LZ99aSrsLxHqgTLMyOGkU/KqtJE2fD6G5tEtErsVe88ihwmTA5u0jzysjb1JL3wqp8ZDBvo59+JWbaOD26A3x0xnl+8H/NMM7+PzZ9mVGkhiR8UnNe0PRLrRWCZClhRAHHdiI0RtJjIP3V57GxQ78i0e6lkMjNufvqJQ3GY+eEYjYOWRsiucDHEguu/RsgMUqCNy6qiKv/AhRZ+9Np1U0bs8c0pfTmWl5naBOo+b/6kVxX+rOKKCwrGFHM=
