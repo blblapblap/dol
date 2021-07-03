@@ -4,6 +4,6 @@ Small project using Devops tools and methodology.
 
 ** Tools
    - Flask
-   - Git
+   - Github
    - Travis CI
    - Heroku
