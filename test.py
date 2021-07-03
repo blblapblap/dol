@@ -13,6 +13,6 @@ class Test(unittest.Testcase):
         result = self.app.get("/")
         self.assertRegex(result.data.decode(), "Devops Laboratory")
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     print("Initializing tests.")
     unittest.main(verbosity = 2)
