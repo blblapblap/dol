@@ -13,4 +13,4 @@ script:
 
 deploy:
     provider: heroku
-    app: dol
+    app: bldol
