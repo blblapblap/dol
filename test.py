@@ -1,8 +1,8 @@
 from app import app
 import unittest
 
-class Test(unittest.Testcase):
-    def setup(self):
+class Test(unittest.TestCase):
+    def setUp(self):
         self.app = app.test_client()
 
     def testReq(self):
