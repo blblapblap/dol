@@ -3,7 +3,7 @@ import unittest
 
 class Test(unittest.Testcase):
     def setup(self):
-        self.app app.test_client()
+        self.app = app.test_client()
 
     def testReq(self):
         result = self.app.get("/")
